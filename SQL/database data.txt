@@ -1,0 +1,5 @@
+host: td5l74lo6615qq42.cbetxkdyhwsb.us-east-1.rds.amazonaws.com
+port: 3306
+user: nh13j024t677r96t
+pass: jhim3xrxtcogkc1f
+database: wkdhtgq1tnwejwox
