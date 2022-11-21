@@ -109,6 +109,16 @@ module.exports = class SPController {
             else{res.status(200).json({data})}
         })
     }
+    deleteFood(req, res){
+        const { food } = req.body;
+        this.dbconnection.execute("DELETE FROM foods WHERE FoodId = ?",[food],(err, data, fields) => {
+            if (err){
+                res.status(500).json(err.message)
+                console.log(err.message)
+            }
+            else{res.status(200).json({data})}
+        })
+    }
     addFoodToCart(req, res){
         const { user } = req.body;
         const { food } = req.body;
